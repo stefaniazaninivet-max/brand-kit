@@ -1,0 +1,65 @@
+/* Veterinaria Zanini — generated from tokens.json */
+:root, [data-theme="light"] {
+  --surface: #ffffff;
+  --surface-soft: #f3f7fd;
+  --surface-tint: #e3edfa;
+  --ink: #12254a;
+  --ink-muted: #4a5b7c;
+  --brand: #3364b1;
+  --brand-deep: #1f3f7a;
+  --on-brand: #ffffff;
+  --azzurro: #5a8eca;
+  --logo-blu: #3364b1;
+  --notte: #12254a;
+  --accent: #ff7a5c;
+  --on-accent: #12254a;
+  --salute: #0f7a62;
+  --on-salute: #ffffff;
+  --urgenza: #b93a00;
+  --on-urgenza: #ffffff;
+  --line: #d5e0f0;
+  --outline: #7c93ba;
+  --focus: #1f3f7a;
+  --shadow-card: 0 8px 24px rgba(18,37,74,0.08);
+}
+
+[data-theme="dark"] {
+  --surface: #0b1730;
+  --surface-soft: #11213f;
+  --surface-tint: #172b52;
+  --ink: #eaf1fb;
+  --ink-muted: #a9bad8;
+  --brand: #7fa8e0;
+  --brand-deep: #a9c6ee;
+  --on-brand: #0b1730;
+  --azzurro: #5a8eca;
+  --logo-blu: #3364b1;
+  --notte: #1c3a73;
+  --accent: #ff8f75;
+  --on-accent: #0b1730;
+  --salute: #4fd1ae;
+  --on-salute: #0b1730;
+  --urgenza: #ff9a6b;
+  --on-urgenza: #0b1730;
+  --line: #243a63;
+  --outline: #5e78a6;
+  --focus: #ffb199;
+  --shadow-card: 0 8px 24px rgba(0,0,0,0.4);
+}
+
+:root {
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 24px;
+  --radius-pill: 999px;
+  --font-display: "Plus Jakarta Sans", "Montserrat", system-ui, sans-serif;
+  --font-body: "DM Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+}

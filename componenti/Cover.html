@@ -1,0 +1,46 @@
+<!-- @dsCard height=320 subtitle="Tessere diagonali nei colori del logo" -->
+<!doctype html>
+<html lang="it">
+<head><meta charset="utf-8"><meta name="viewport" content="width=960">
+<link rel="stylesheet" href="../tokens.css"><link rel="stylesheet" href="componenti.css">
+<style>
+  html, body { margin: 0; background: var(--surface); }
+  .cover { position: relative; width: 960px; height: 320px; overflow: hidden; background: var(--surface); }
+  .cover svg { position: absolute; inset: 0; width: 960px; height: 320px; }
+  .r { rx: var(--radius-md); }
+  .azz { fill: var(--azzurro); }
+  .logo { fill: var(--logo-blu); }
+  .notte { fill: var(--notte); }
+  .accent { fill: var(--accent); }
+  .tint { fill: var(--surface-tint); }
+  .salute { fill: var(--salute); }
+  .name { position: absolute; left: 40px; bottom: 32px; width: 440px; }
+  .name h1 { margin: 0; font-family: var(--font-display); font-weight: 800; font-size: 64px; line-height: .95; letter-spacing: -0.02em; color: var(--ink); }
+  .name p { margin: 14px 0 0; font-family: var(--font-body); font-size: 14px; line-height: 20px; color: var(--ink-muted); }
+</style></head>
+<body>
+<div class="cover">
+<svg viewBox="0 0 960 320" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Tessere diagonali nei colori del logo Zanini">
+<!--
+  Blocchi: azzurro, logo-blu, notte, accent, salute e surface-tint in tessere da 128 px (multipli di space-4), una larga 272 px (due moduli + space-4).
+  Disposizione: griglia modulare 3x2 come le quattro tessere del logo, a destra di x = 480, con una tessera doppia in alto.
+  Motivo: tessere divise in diagonale, metà chiara in alto a destra, perché il marchio è fatto di quattro tessere arrotondate con quella diagonale.
+  Misure: radius-md (14px) per gli angoli, space-4 (16px) tra le tessere.
+-->
+  <clipPath id="ca"><rect class="r" x="504" y="24" width="128" height="128" rx="14"/></clipPath>
+  <g clip-path="url(#ca)"><rect class="logo" x="504" y="24" width="128" height="128"/><polygon class="azz" points="504,24 632,24 632,152"/></g>
+  <clipPath id="cb"><rect class="r" x="648" y="24" width="272" height="128" rx="14"/></clipPath>
+  <g clip-path="url(#cb)"><rect class="notte" x="648" y="24" width="272" height="128"/><polygon class="logo" points="648,24 920,24 920,152"/></g>
+  <rect class="r accent" x="504" y="168" width="128" height="128" rx="14"/>
+  <clipPath id="cd"><rect class="r" x="648" y="168" width="128" height="128" rx="14"/></clipPath>
+  <g clip-path="url(#cd)"><rect class="azz" x="648" y="168" width="128" height="128"/><polygon class="tint" points="648,168 776,168 776,296"/></g>
+  <clipPath id="ce"><rect class="r" x="792" y="168" width="128" height="128" rx="14"/></clipPath>
+  <g clip-path="url(#ce)"><rect class="notte" x="792" y="168" width="128" height="128"/><polygon class="salute" points="792,168 920,168 920,296"/></g>
+</svg>
+<div class="name">
+  <h1>Veterinaria<br>Zanini</h1>
+  <p>Il tuo punto di riferimento per la cura</p>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!-- @dsCard group="Azioni" height=200 subtitle="Pulsanti a pillola: uno solo corallo per schermata" -->
+<!doctype html>
+<html lang="it">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="../tokens.css"><link rel="stylesheet" href="componenti.css">
+<style>
+  body { margin: 0; padding: 24px; background: var(--surface); font-family: var(--font-body); color: var(--ink); }
+  .row { display: flex; flex-wrap: wrap; gap: 16px; align-items: center; margin-bottom: 20px; }
+  .lbl { font-size: 12px; line-height: 16px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--ink-muted); margin: 0 0 8px; }
+</style></head>
+<body>
+  <p class="lbl">Principale, azione e contorno</p>
+  <div class="row">
+    <button class="zn-btn zn-btn--accent">Prenota una visita</button>
+    <button class="zn-btn zn-btn--brand">Scrivici su WhatsApp</button>
+    <button class="zn-btn zn-btn--outline">Vedi i reparti</button>
+  </div>
+  <p class="lbl">Piccolo e non disponibile</p>
+  <div class="row">
+    <button class="zn-btn zn-btn--brand zn-btn--sm">Chiama</button>
+    <button class="zn-btn zn-btn--outline zn-btn--sm">Indicazioni</button>
+    <button class="zn-btn zn-btn--brand" disabled>Orario non disponibile</button>
+  </div>
+</body>
+</html>
